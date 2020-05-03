@@ -19,7 +19,10 @@ class GADBannerViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        // This app using sample id.
+        // https://developers.google.com/admob/ios/test-ads#sample_ad_units
         bannerView.adUnitID = "ca-app-pub-3940256099942544/2934735716"
+        
         bannerView.delegate = self
         bannerView.translatesAutoresizingMaskIntoConstraints = false
         bannerView.rootViewController = self
